@@ -12,16 +12,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #6a3093;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #6a3093; 
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+    background: linear-gradient(to right, #a044ff, #6a3093); 
 }
 .iphone{
     width: 23rem;
     height: 45rem;
     border-radius: 50px;
     border: 8px solid #252525;
-    /* box-shadow: 0 0 10px #a4a09d; */
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
@@ -118,14 +117,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-.navigation_menu{
-    position: absolute;
-    left: 50%;
-    bottom: 10rem;
-    z-index: 9999;
-    background-color: red;
-    transform: translateX(-50%);
-}
 .button_navigatio{
     width: 5px;
     height: 5px;
@@ -154,6 +145,16 @@ body{
 .icon_app:hover{
     transform: scale(1.05);
 }
+.mensage{
+    position: absolute;
+    bottom: 2.5rem;
+    padding: 10px;
+    border-radius: 15px;
+    color: #EEF1FF;
+    border: 2px solid #EEF1FF;
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+}
 .alert_mensage{
     position: absolute;
     top: 50%;
@@ -175,6 +176,24 @@ body{
 }
 .span_mensage{
     margin-bottom: 10px;
+}
+.button_power{
+    width: 5px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: -99px;
+    z-index: 9999;
+}
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+.footer a{
+    color: inherit;
 }
 @media screen and (max-width:374px){
     .iphone{
