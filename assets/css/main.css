@@ -74,6 +74,33 @@ body{
     position: relative;
     
 }
+.animated_music{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    margin-left: 20px;
+    margin-bottom: 2px;
+}
+.animated_music div{
+    width: 1px;
+    background-color: #1ed760;
+}
+.animated_music .line1{
+    height: 10px;
+}
+.animated_music .line2{
+    height: 5px;
+}
+.animated_music .line3{
+    height:8px;
+}
+.animated_music .line4{
+    height: 6px;
+}
+.animated_music .line5{
+    height: 10px;
+}
 .camera_front{
     width: 12px;
     height: 12px;
@@ -147,13 +174,10 @@ body{
 }
 .mensage{
     position: absolute;
-    bottom: 2.5rem;
-    padding: 10px;
-    border-radius: 15px;
+    bottom: 2rem;  
     color: #EEF1FF;
-    border: 2px solid #EEF1FF;
     font-weight: bold;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+   
 }
 .alert_mensage{
     position: absolute;
@@ -191,6 +215,8 @@ body{
     position: absolute;
     bottom: 0;
     text-align: center;
+    border-top: 1px solid #6a3093;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
 }
 .footer a{
     color: inherit;
