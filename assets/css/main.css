@@ -173,6 +173,56 @@ body{
 .icon_app:hover{
     transform: scale(1.05);
 }
+.tarefas{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    max-width: 400px;
+    width: 100%;
+    padding-top: 10px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all .5s ease-in-out;
+    transform-origin: top;
+    z-index: 2;
+
+}
+.next_updates{
+    padding: 20px;
+    color: #EEF1FF;
+    border: 2px solid #a044ff;
+    background-color: #6a3093;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+.btn_tasks, .active{
+    width: 150px;
+    padding:5px;
+    background-color: #6a3093;
+    color: #EEF1FF;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #a044ff;
+}
+.next_updates{
+    display: none;
+}
+.taskActive{
+    display: block;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 99999;
+}
+.taskActive .active{
+    position: relative;
+    z-index: 2;
+    background-color: red;
+}
 .mensage{
     position: absolute;
     bottom: 2rem;  
