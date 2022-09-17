@@ -6,6 +6,7 @@ button.innerText = "Tarefas pendente";
 button.addEventListener('click', function(){
     tasks.classList.toggle('taskActive');
     button.innerText = 'Fechar';
+    button.classList.toggle('active');
         if(tasks.classList == 'next_updates'){
             button.innerText = 'Tarefas pendente';
         }

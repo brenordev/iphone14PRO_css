@@ -20,6 +20,7 @@ body{
 .iphone{
     width: 23rem;
     height: 45rem;
+    margin: 10rem 0;
     border-radius: 50px;
     border: 8px solid #252525;
     overflow: hidden;
@@ -145,7 +146,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.button_navigatio{
+.button_navigation{
     width: 5px;
     height: 5px;
     background-color: antiquewhite;
@@ -186,49 +187,69 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    transition: all .5s ease-in-out;
     transform-origin: top;
-    z-index: 2;
+    z-index: 3;
 
 }
 .next_updates{
-    padding: 20px;
     color: #EEF1FF;
+    padding: 10px;
+    
     border: 2px solid #a044ff;
     background-color: #6a3093;
+    transition: all .5s ease;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 }
+.next_updates li{
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.next_updates li:hover{
+    background-color: #7027A0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
 .btn_tasks, .active{
-    width: 150px;
-    padding:5px;
+    width: 200px;
+    height: 50px;
+    padding:8px 16px;
     background-color: #6a3093;
     color: #EEF1FF;
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
     border: 2px solid #a044ff;
+    transition: all .5s ease;
+}
+.active{
+    background-color: #EB1D36;
+    border: 2px solid #EEF1FF;
+}
+.btn_tasks:hover, .active:hover{
+   box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3);
+   transform: translateY(-2px);
+   border: 2px solid #EEF1FF;
 }
 .next_updates{
-    display: none;
+    opacity: 0;
 }
 .taskActive{
     display: block;
-    padding: 30px;
     border-radius: 10px;
     position: relative;
-    z-index: 99999;
-}
-.taskActive .active{
-    position: relative;
-    z-index: 2;
-    background-color: red;
+    opacity: 1;
+    transition: all .5s ease;
 }
 .mensage{
     position: absolute;
-    bottom: 2rem;  
+    top: 5rem;  
     color: #EEF1FF;
-    font-weight: bold;
-   
+    font-weight: bold;  
 }
 .alert_mensage{
     position: absolute;
