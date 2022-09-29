@@ -1,3 +1,4 @@
+@import '_variables';
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 * {
   margin: 0;
@@ -13,35 +14,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: #6a3093; 
-    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
-    background: linear-gradient(to right, #a044ff, #6a3093);  */
-  background: #d3cce3; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #e9e4f0,
-    #d3cce3
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #e9e4f0,
-    #d3cce3
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-body.darkmode {
-  background: #0f0c29; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+
 }
 .iphone {
   width: 23rem;
@@ -211,9 +187,8 @@ body.darkmode {
   gap: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  transform-origin: top;
   z-index: 3;
 }
 .next_updates {
@@ -281,17 +256,19 @@ body.darkmode {
 }
 .btn_theme {
   position: absolute;
-  top: 0;
-  left: 57%;
+  top: 32px;
+  right: 10px;
   z-index: 5;
   border-radius: 10px;
-  top: 15px;
   padding: 8px 16px;
   cursor: pointer;
   background-color: #6a3093;
   border: 2px solid #a044ff;
   color: #eef1ff;
   transition: all .5s ease;
+}
+.btn_theme i{
+  font-size: 1.2rem;
 }
 .btn_theme:hover {
   box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3);
@@ -334,11 +311,11 @@ body.darkmode {
   left: 0;
   margin-top: 20px;
   text-align: center;
-  border-top: 1px solid #6a3093;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-top: 2px solid #6a3093;
+  color: #a044ff;
 }
 .footer a {
-  color: inherit;
+  color: #a044ff;
 }
 @media screen and (max-width: 374px) {
   .iphone {

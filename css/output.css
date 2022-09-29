@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 0 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+}
+
+.iphone {
+  width: 23rem;
+  height: 45rem;
+  margin: 10rem 0;
+  border-radius: 50px;
+  border: 8px solid #252525;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.wallpaper {
+  width: 100%;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+  color: aliceblue;
+  z-index: 1;
+}
+
+.tools_center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: #151515;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.tools_center:hover {
+  width: 180px;
+}
+
+.banner_music {
+  width: 20px;
+  height: 20px;
+}
+
+.tools_music {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  position: relative;
+}
+
+.animated_music {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  margin-left: 20px;
+  margin-bottom: 2px;
+}
+
+.animated_music div {
+  width: 1px;
+  background-color: #1ed760;
+}
+
+.animated_music .line1 {
+  height: 10px;
+}
+
+.animated_music .line2 {
+  height: 5px;
+}
+
+.animated_music .line3 {
+  height: 8px;
+}
+
+.animated_music .line4 {
+  height: 6px;
+}
+
+.animated_music .line5 {
+  height: 10px;
+}
+
+.camera_front {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 57%;
+  top: 1.2rem;
+  z-index: 2;
+  border-radius: 50px;
+  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.1);
+  background-color: rgba(22, 33, 62, 0.1450980392);
+}
+
+.batery_signal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.8rem;
+}
+
+.icon_spotify {
+  color: #1ed760;
+}
+
+.icon_batery,
+.icon_wifi {
+  font-size: 1.2rem;
+  margin-top: 3px;
+}
+
+.container_apps_menus {
+  width: 100%;
+  max-height: 100vh;
+  text-align: center;
+  position: absolute;
+  padding: 0 1.3rem;
+  margin-top: 4rem;
+  left: 0;
+  top: 0;
+  display: grid;
+  row-gap: 25px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_navigation {
+  width: 5px;
+  height: 5px;
+  background-color: antiquewhite;
+}
+
+.navbar_bottom {
+  width: 20rem;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.icon_app {
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.icon_app:hover {
+  transform: scale(1.05);
+}
+
+.tarefas {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  max-width: 400px;
+  width: 100%;
+  padding-top: 10px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.next_updates {
+  color: #eef1ff;
+  padding: 10px;
+  display: none;
+  border: 2px solid #a044ff;
+  background-color: #6a3093;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.next_updates li {
+  display: flex;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.next_updates li:hover {
+  background-color: #7027a0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn_tasks,
+.active {
+  width: 200px;
+  height: 50px;
+  padding: 8px 16px;
+  background-color: #6a3093;
+  color: #eef1ff;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border: 2px solid #a044ff;
+  transition: all 0.5s ease;
+}
+
+.active {
+  background-color: #eb1d36;
+  border: 2px solid #eef1ff;
+}
+
+.btn_tasks:hover,
+.active:hover {
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  border: 2px solid #eef1ff;
+}
+
+.next_updates {
+  opacity: 0;
+}
+
+.taskActive {
+  display: block;
+  border-radius: 10px;
+  position: relative;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.next_updates ul .check {
+  background-color: #1ed760;
+  color: #151515;
+  font-weight: bold;
+}
+
+.btn_theme {
+  position: absolute;
+  top: 32px;
+  right: 10px;
+  z-index: 5;
+  border-radius: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #6a3093;
+  border: 2px solid #a044ff;
+  color: #eef1ff;
+  transition: all 0.5s ease;
+}
+
+.btn_theme i {
+  font-size: 1.2rem;
+}
+
+.btn_theme:hover {
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  border: 2px solid #eef1ff;
+}
+
+.mensage {
+  position: absolute;
+  top: 5rem;
+  color: #eef1ff;
+  font-weight: bold;
+}
+
+.alert_mensage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #252525;
+  max-width: 300px;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: #eef1ff;
+}
+
+.alert_mensage i {
+  font-size: 1.5rem;
+}
+
+.span_mensage {
+  margin-bottom: 10px;
+}
+
+.footer {
+  width: 100%;
+  height: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: 20px;
+  text-align: center;
+  border-top: 2px solid #6a3093;
+  color: #a044ff;
+}
+
+.footer a {
+  color: #a044ff;
+}
+
+@media screen and (max-width: 374px) {
+  .iphone {
+    display: none;
+  }
+  .alert_mensage {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
